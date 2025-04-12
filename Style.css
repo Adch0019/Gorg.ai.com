@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: white;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader {
+  border: 8px solid #444;
+  border-top: 8px solid #00ffcc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.auth-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.auth-container {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+.auth-container button {
+  background: #00ffcc;
+  color: black;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.social {
+  background: #333;
+  color: white;
+  margin-top: 5px;
+}
+header {
+  background: #1e1e1e;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  padding: 20px;
+  height: 70vh;
+  overflow-y: auto;
+}
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.bot {
+  background: #333;
+}
+.user {
+  background: #00ffcc;
+  color: black;
+  align-self: flex-end;
+}
+footer {
+  display: flex;
+  padding: 10px;
+  background: #1e1e1e;
+}
+footer input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+footer button {
+  background: #00ffcc;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
